@@ -1,0 +1,371 @@
+* {
+    /* définit la façon dont la hauteur et 
+    la largeur totale d'un élément est calculée */
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #D8482F;
+    --color2: #F4F4F4;
+}
+body {
+    /* surface de l'image entiere */
+    margin: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    height: 350px;
+}
+
+div.cover {
+    /* taille de l'image */ 
+    background: url(cover_overlay.png) no-repeat center/100% 100%, url(cover.jpg) no-repeat center/cover;
+    height: 360px;
+    position: relative;
+}
+
+img.cover-profile {
+    /* petite image au centre */
+    height: 90px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+h1 {
+    /* texte au centre le plus important */
+    color:white;
+    text-align: center;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+div.cover p {
+    /* ligne en dessous du texte principale */
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+div.cover-contact {
+    /* background-color: #FF000080;*/
+    /* encart en haut a droite */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+
+div.cover-contact p {
+    /* surface de l'encart */
+    text-align: left;
+    margin-top: 0px;
+    /* ligne verticale a droite */
+    margin-bottom: 0px;
+}
+
+div.cover-contact p:first-child {
+    /* espace entre les deux ligne de l'encart */
+    margin-bottom: 10px;
+}
+
+div.cover-contact a {
+    /* couleur du texte de l'encart */
+    color: white;
+    font-size: 14px;
+}
+
+a.contact-button {
+    /* le rectangle du bouton me contacter */
+    color: var(--color1);
+    border: 3px solid var(--color1);
+    padding: 8px 20px;
+    text-decoration: none;
+    background-color: #00000040;
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+a.contact-button-portfolio {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+a.contact-button:hover {
+    /* changement de la couleur du bouton */
+    color: white;
+    border: 3px solid white;
+}
+
+.section {
+    /* placement du texte en declaler */
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+
+div.section-grise1 {
+    /* section du bas de la page */
+    background: url(triangle2white.svg) no-repeat center bottom -1px/100%;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+
+}
+
+div.section-grise2 {
+    /* section du bas de la page */
+    background: url(triangle1white.svg) no-repeat center top/100%;
+    background-color: var(--color2);
+    padding-bottom: 80px;
+}
+
+h2 {
+    /* texte centrer en gras */
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+div.separateur {
+    /* barre horizontale */
+    background-color: #979797;
+    height: 1px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.section-grise1 p {
+    /* parti sous la barre horizontale */
+    font-size: 22px;
+    color: #771605;
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+img.col-contenu {
+    /* attribut d'une colone */
+    width: 40%;
+}
+
+div.col-contenu {
+    /* attribut de l'autre colone */
+    width: 60%;
+    padding-left: 16px;
+}
+
+.float-right {
+    /* permet de placer les colone cote a cote */
+    float: right;
+}
+
+
+div.texte-avec-ligne-verticale {
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+    height: 40px;
+    display: inline-block;
+}
+
+div.texte-avec-ligne-verticale p{
+    /* attribut pour le paragraphe */
+    margin-top: 0;
+}
+
+div.barre-verticale {
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+
+.col-portfolio {
+    width: 47%;
+}
+
+div.frame {
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+p.frame-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    }
+
+div.frame img {
+    width: 100px;
+    }
+
+/* PORTFOLIO */
+
+.portfolio-header {
+    height: 90px;
+    background: url(header.jpg) no-repeat center/cover;
+    position: relative;
+}
+
+.portfolio-header-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+h1.portfolio {
+    font-size: 46px;
+    color: black;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+h2.portfolio {
+    font-size: 26px;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+a.portfolio-back {
+    color: var(--color1);
+    margin-left: 10px;
+}
+
+img.portfolio {
+    width: 70%;
+    max-width: 473px;
+}
+
+.display-mobile {
+    display: none;
+}
+
+/* Responsive design : Mobile */
+@media screen and (max-width: 760px) {
+
+    img.cover-profile {
+        /* petite image au centre */
+        height: 80px;
+        margin-top: 75px;
+    }
+    
+    div.separateur {
+        /* barre horizontale */
+        width: 100px;
+    }
+
+    h1 {
+        /* texte au centre le plus important */
+        font-size: 36px;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    
+    div.cover p {
+        /* ligne en dessous du texte principale */
+        margin-top: 2px;
+        font-size: 13px;
+    }
+
+    .section {
+        /* placement du texte en declaler */
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    div.section-grise1 {
+        /* section du bas de la page */
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        /* texte centrer en gras */
+        font-size: 30px;
+    }
+
+    img.col-contenu {
+        /* attribut d'une colone */
+        width: 40%;
+    }
+    
+    div.col-contenu {
+        /* attribut de l'autre colone */
+        width: 60%;
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+    .col-portfolio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div.frame {
+        margin: 0px 0px;
+        padding: 0px 0px;
+        box-shadow: none;
+    }
+    
+    div.frame img {
+        width: 70px;
+    }
+
+    a.portfolio-back {
+        margin-left: -4px;
+    }
+
+    /* Portfolio Mobile */
+    .portfolio-header-title {
+        font-size: 18px;
+        padding-top: 8px;
+        padding-left: 4px;
+    }
+
+    a.contact-button {
+        /* le rectangle du bouton me contacter */
+        padding: 7px 15px;
+        margin-top: 22px;
+        font-size: 14px;
+    }
+    
+    a.contact-button-portfolio {
+        right: 8px;
+    }
+
+    h1.portfolio {
+        font-size: 40px;
+
+    }
+    
+    h2.portfolio {
+        font-size: 22px;
+    }
+
+    img.portfolio {
+        width: 100%;
+    }
+
+    .display-mobile {
+        display: block;
+    }
+}
