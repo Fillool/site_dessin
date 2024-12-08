@@ -1,2 +1,2 @@
 # site de dessin
-a revoir
+revoir la mise en page
