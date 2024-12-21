@@ -8,6 +8,7 @@
     --color1: #1c19c7;
     --color2: #F4F4F4;
     --color3: rgb(209, 10, 26);
+    --color4: #b7ecd6;
 }
 body {
     /* surface de l'image entiere */
@@ -116,6 +117,7 @@ a.contact-button:hover {
     padding-top: 20px;
     padding-bottom: 30px;
     overflow: auto;
+    background-color: var(--color4);
 }
 
 .filigrane {
@@ -132,7 +134,7 @@ a.contact-button:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 40%;
-    background-color: #93e2c1;
+    background-color: var(--color4);
     padding: 1em;
     /*text-align: center;*/
 }
